@@ -1,0 +1,17 @@
+40,53c40
+< #Virtual Host Entry for foo.localhost
+< <VirtualHost *:80>
+<   DocumentRoot "/Users/$user/Sites/foo"
+<   ServerName foo.localhost
+<   ErrorLog "/private/var/log/apache2/foo-error_log"
+<   CustomLog "/private/var/log/apache2/foo-access_log" common
+< </VirtualHost>
+< #Virtual Host Entry for bar.localhost
+< <VirtualHost *:80>
+<   DocumentRoot "/Users/$user/Sites/bar"
+<   ServerName bar.localhost
+<   ErrorLog "/private/var/log/apache2/bar-error_log"
+<   CustomLog "/private/var/log/apache2/bar-access_log" common
+< </VirtualHost>
+---
+> 

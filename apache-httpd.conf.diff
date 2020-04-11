@@ -1,0 +1,16 @@
+167c167
+< LoadModule vhost_alias_module libexec/apache2/mod_vhost_alias.so
+---
+> #LoadModule vhost_alias_module libexec/apache2/mod_vhost_alias.so
+173c173
+< LoadModule userdir_module libexec/apache2/mod_userdir.so
+---
+> #LoadModule userdir_module libexec/apache2/mod_userdir.so
+510c510
+< Include /private/etc/apache2/extra/httpd-userdir.conf
+---
+> #Include /private/etc/apache2/extra/httpd-userdir.conf
+516c516
+< Include /private/etc/apache2/extra/httpd-vhosts.conf
+---
+> #Include /private/etc/apache2/extra/httpd-vhosts.conf
