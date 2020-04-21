@@ -29,10 +29,12 @@ Install the fonts as listed:
 Install oh-my-zsh
 
 ```zsh
-> sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+> sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-(If you prefer to use Git Bash, disable Cygwin git)
+Important! You have to use the cygwin git for this to work! Git bash fails
+
+(Afterwards, if you prefer to use Git Bash, disable Cygwin git)
 
 Create a batch file to run Cygwin - "Cygwin-zsh - MesloLGS NF.bat" in the %APPS%\Cygwin64 folder
 
@@ -43,16 +45,32 @@ Create a batch file to run Cygwin - "Cygwin-zsh - MesloLGS NF.bat" in the %APPS%
 - Select the %APPS%\Cygwin64\Cygwin.ico icon file
 - Drag the shortcut to the taskbar and pin it
 
-To select a custom starting folder, at the end of ~/.zsh
-
 ```zsh
-> export TERM=xterm-256color
-> cd /cgwin/c/dev
+export TERM=xterm-256color
+setopt globdots
 ```
 
-Install powerlevel10k
+```zsh
+cd /cygdrive/c/dev
+```
+
+To select a custom starting folder, at the end of ~/.zsh
+
+Install powerlevel10k - not this may also require the Cygwin git
 
 ```zsh
 > git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+... alternatively
+> cd .oh-my-zsh/custom/themes
+> git clone https://github.com/romkatv/powerlevel10k.git
+```
+
+in .zshrc
+
+```zsh
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+```zsh
 > p10k configure
 ```
