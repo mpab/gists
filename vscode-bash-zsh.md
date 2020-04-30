@@ -16,7 +16,9 @@ settings.json (F1->open settings.json icon)
  }
 ```
 
-## zsh shell (with custom colours)
+## zsh shell (with custom colors)
+
+Find themes here: <https://glitchbone.github.io/vscode-base16-term/>
 
 ```json
 {
