@@ -22,3 +22,22 @@ upgrade npm for (node)
 ```console
 cd ~/.nvm/versions/node/$(node -v)/lib && npm install npm
 ```
+
+## Windows
+
+<https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows>
+
+There is an install script, but there are only a few relevant settings
+
+```dos
+setx NVM_HOME "D:\Apps\nvm"
+setx NVM_SYMLINK "D:\Apps\nodejs"
+setx PATH "%PATH%;%NVM_HOME%;%NVM_SYMLINK%"
+```
+
+install node
+
+```dos
+nvm install latest
+nvm use <version>
+node --version
