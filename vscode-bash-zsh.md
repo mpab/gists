@@ -20,6 +20,8 @@ settings.json (F1->open settings.json icon)
 
 Find themes here: <https://glitchbone.github.io/vscode-base16-term/>
 
+Don't forget the font if using oh-my-zsh
+
 ```json
 {
     "terminal.integrated.shell.windows": "D:\\Apps\\msys64\\usr\\bin\\zsh.exe",
@@ -52,5 +54,6 @@ Find themes here: <https://glitchbone.github.io/vscode-base16-term/>
         "terminal.ansiWhite":"#DCDCCC",
         "terminal.ansiYellow":"#E0CF9F"
     },
+    "terminal.integrated.fontFamily": "MesloLGS NF"
  }
 ```
