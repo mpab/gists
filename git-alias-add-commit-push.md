@@ -19,3 +19,9 @@ run
 ```console
 $ git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
+
+to remove the alias
+
+```console
+$ git config --global --unset alias.acp
+```
