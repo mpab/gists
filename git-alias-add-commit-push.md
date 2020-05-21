@@ -1,6 +1,6 @@
 # GIT alias/shortcut
 
-replace 
+replace
 
 ```console
 $ git add
@@ -11,11 +11,11 @@ $ git push
 with
 
 ```console
-$ git amp "commit message"
+$ git acp "commit message"
 ```
 
 run
 
 ```console
-$ git config --global alias.amp '!f() { git add -A && git commit -m "$@" && git push; }; f'
+$ git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
