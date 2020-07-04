@@ -43,3 +43,9 @@ to remove the alias
 ```console
 $ git config --global --unset alias.feature
 ```
+
+## To avoid having to 'git branch --set-upstream my_branch origin/my_branch' after creating a branch
+
+```console
+$ git config --global push.default current
+```
