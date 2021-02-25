@@ -29,15 +29,16 @@ cd ~/.nvm/versions/node/$(node -v)/lib && npm install npm
 
 There is an install script, but there are only a few relevant settings
 
-```dos
+```console
 setx NVM_HOME "D:\Apps\nvm"
 setx NVM_SYMLINK "D:\Apps\nodejs"
 setx PATH "%PATH%;%NVM_HOME%;%NVM_SYMLINK%"
 ```
 
-install node
+**IMPORTANT** install node from an elevated command prompt (also works in bash)
 
-```dos
+```console
 nvm install latest
 nvm use <version>
 node --version
+```
