@@ -7,7 +7,6 @@ Not seeing any console output? may need to use winpty
 .bashrc
 
 ```bash
-#
 export HOME_GLOBAL_PYTHON=$HOME_PYENV/versions/$(pyenv global)
 export PATH=$PATH:$APPS/scripts:$SCALA_HOME/bin:$HOME_GLOBAL_PYTHON
 
