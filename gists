@@ -1,0 +1,18 @@
+#!/bin/bash
+SCRIPT_PATH=$(dirname $0)
+
+if [ -z $1 ]; then
+	echo "listing files in $SCRIPT_PATH:"
+	ls $SCRIPT_PATH
+	exit 0
+fi
+
+echo "searching for files matching $1 in $SCRIPT_PATH:"
+files=$(ls $SCRIPT_PATH | grep $1)
+echo ==================================================================
+for file in $files
+do
+	
+	echo found: $SCRIPT_PATH/$file
+	echo ------------------------------------------------------------------
+done
