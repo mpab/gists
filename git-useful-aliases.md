@@ -5,7 +5,7 @@
 replace
 
 ```console
-$ git add
+$ git add .
 $ git commit -m "commit message"
 $ git push
 ```
@@ -21,6 +21,8 @@ run
 ```console
 $ git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
+
+**NOTE:** this will add and push _all_ new/changed/deleted files in the repository, so use with care
 
 to remove the alias
 
