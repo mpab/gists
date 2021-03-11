@@ -1,4 +1,4 @@
-# GIT aliass/shortcuts
+# GIT aliases/shortcuts
 
 ## Combine git add, commit, push
 
