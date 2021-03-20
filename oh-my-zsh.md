@@ -56,12 +56,12 @@ cd /cygdrive/c/dev
 
 To select a custom starting folder, at the end of ~/.zsh
 
-Install powerlevel10k - not this may also require the Cygwin git
+Install powerlevel10k - note this may also require the Cygwin git
 
 ```zsh
 > git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ... alternatively
-> cd .oh-my-zsh/custom/themes
+> cd ~/.oh-my-zsh/custom/themes
 > git clone https://github.com/romkatv/powerlevel10k.git
 ```
 
@@ -74,3 +74,5 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 ```zsh
 > p10k configure
 ```
+
+[vscode integration](./vscode-bash-zsh.md)

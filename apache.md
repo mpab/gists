@@ -1,8 +1,20 @@
-#macOS
+# macOS
+
 virtual hosts file
 /etc/apache2/extra/httpd-vhosts.conf
 
-##enable everything under ~/Sites
+## Stop/Start/Autostart
+
+disable autostart
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+start
+sudo apachectl start
+
+stop
+sudo apachectl stop
+
+## enable everything under ~/Sites
 
 ```xml
 <VirtualHost *:80>
