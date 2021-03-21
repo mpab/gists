@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ "$1"x == "x" ]; then
+  echo error: missing folder_name argument
+	echo usage: $0 folder_name file_name
+	exit
+fi
+
+if [ "$2"x == "x" ]; then
+  echo error: missing file_name argument
+	echo usage: $0 folder_name file_name
+	exit
+fi
+
+THIS_FOLDER_NAME=$(dirname $0)
+
+echo "files matching: $2 in $1"
+files=$(ls $1 | grep $2)
+echo ============================================================
+echo ++++++++ files matching: $1 in $PWD
+for file in $files
+do
+  echo $file
+done
+echo -------- files matching: $1 in $PWD

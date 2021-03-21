@@ -1,0 +1,3 @@
+#!/bin/sh
+THIS_FOLDER_NAME=$(dirname $0)
+$THIS_FOLDER_NAME/--help $@

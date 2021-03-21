@@ -1,18 +1,21 @@
-#!/bin/bash
-SCRIPT_PATH=$(dirname $0)
+#!/bin/sh
+
+THIS_FOLDER_NAME=$(dirname $0)
 
 if [ -z $1 ]; then
-	echo "listing files in $SCRIPT_PATH:"
-	ls $SCRIPT_PATH
-	exit 0
+	$THIS_FOLDER_NAME/commands/--ls $THIS_FOLDER_NAME $@
+	exit
 fi
 
-echo "searching for files matching $1 in $SCRIPT_PATH:"
-files=$(ls $SCRIPT_PATH | grep $1)
-echo ==================================================================
-for file in $files
+for COMMAND in $(ls $THIS_FOLDER_NAME/commands)
 do
-	
-	echo found: $SCRIPT_PATH/$file
-	echo ------------------------------------------------------------------
+  if [ "$1"x == "$COMMAND"x ]; then
+    shift
+    $THIS_FOLDER_NAME/commands/$COMMAND $THIS_FOLDER_NAME $@
+    exit
+  fi
 done
+
+echo invalid command: $1
+echo usage: "$0 command (params, ...)" where command is one of: $(ls $THIS_FOLDER_NAME/commands)
+exit

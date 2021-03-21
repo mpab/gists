@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$1"x == "x" ]; then
+  echo error: missing folder_name argument
+	echo usage: $0 folder_name
+	exit
+fi
+
+echo "files in: $1"
+ls $1
+exit 0

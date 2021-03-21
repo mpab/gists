@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if [ "$1"x == "x" ]; then
+  echo error: missing folder_name argument
+  echo usage: $0 folder_name file_name
+  exit
+fi
+
+if [ "$2"x == "x" ]; then
+  echo error: missing file_name argument
+  echo usage: $0 folder_name file_name
+  exit
+fi
+
+for FILE in $(ls $1)
+do
+  if [ "$2"x == "$FILE"x ]; then
+    code $1/$2
+    exit
+  fi
+done
+
+echo $2 not found
