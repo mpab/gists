@@ -2,7 +2,7 @@
 
 **PREREQUISITE:** Install nvm
 
-## uninstallinstall/select npm using nvm
+## uninstall/install/select npm using nvm
 
 ```console
 nvm uninstall 14.16.0
