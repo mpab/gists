@@ -1,2 +1,17 @@
 #!/bin/sh
-echo not yet implemented
+CMD_FOLDER_NAME=$(dirname $0)
+
+CMD_FOLDER_PATH="$(cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)"
+cd $CMD_FOLDER_PATH
+cd ..
+FUNCTION_FOLDER_NAME=$PWD
+FUNCTION_NAME=${PWD##*/}
+
+echo usage: "$FUNCTION_NAME command (params, ...)" where command is one of: $(ls $CMD_FOLDER_NAME)
+for CMD in $(ls $CMD_FOLDER_NAME)
+do
+  echo $FUNCTION_NAME $CMD
+#   if [ "$CMD"x != "--helpx" ] && [ "$CMD"x != "--hx" ]; then
+#     $FUNCTION_NAME $CMD
+#   fi
+done
