@@ -65,7 +65,7 @@ git rebase master --preserve-merges <-- might be a better option to prevent merg
 git merge master
 
 probably the best option:
-git rebase --onto master mpab/parking-forecastry
+git rebase --onto master user/branch
 
 NOTE! you won't see the changes any more - to uncommit: git reset HEAD^
 

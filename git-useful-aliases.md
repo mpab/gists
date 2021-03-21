@@ -37,7 +37,7 @@ First remove the requirement to call git push --set-upstream every time...
 git config --global push.default current
 
 ```console
-> git config --global alias.feature '!f() { git branch -D mpab/turtles && git branch mpab/turtles && git checkout mpab/turtles && git acp "$@"; }; f'
+> git config --global alias.feature '!f() { git branch -D user/turtles && git branch user/turtles && git checkout user/turtles && git acp "$@"; }; f'
 ```
 
 to remove the alias
