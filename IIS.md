@@ -15,4 +15,3 @@ Disable WebAV using web.config file in site root
 [Before link](files/webdav-issue-web.config)
 
 [After link](files/webdav-fix-web.config)
-
